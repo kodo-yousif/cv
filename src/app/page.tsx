@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <div className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
         <div className="flex justify-between">
           <div className="flex-1 space-y-1.5 pr-3 sm:pr-0">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -81,18 +81,6 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
-            </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex print:text-[12px]">
-              {RESUME_DATA.contact.email ? (
-                <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                  <span className="underline">{RESUME_DATA.contact.email}</span>
-                </a>
-              ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                  <span className="underline">{RESUME_DATA.contact.tel}</span>
-                </a>
-              ) : null}
             </div>
           </div>
 
@@ -200,7 +188,7 @@ export default function Page() {
             })}
           </div>
         </Section>
-      </div>
+      </section>
 
       <CommandMenu
         links={[
