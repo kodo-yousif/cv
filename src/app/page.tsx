@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-2">
         <div className="flex justify-between">
           <div className="flex-1 space-y-1.5 pr-3 sm:pr-0">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -34,10 +34,10 @@ export default function Page() {
                 {RESUME_DATA.location}
               </a>
             </p>
-            <p className="max-w-md text-pretty pt-2 font-mono text-sm text-muted-foreground print:text-[12px]">
+            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
               {RESUME_DATA.contact.email}
             </p>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+            <p className="!mt-0 max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
               {RESUME_DATA.contact.tel.replace(
                 /(\+964)(\d{3})(\d{3})(\d{2})/,
                 "$1 $2 $3 $4",
@@ -91,7 +91,7 @@ export default function Page() {
         </div>
         <Section>
           <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty text-justify font-mono text-sm text-muted-foreground print:text-[12px]">
+          <p className="t ext-justify text-pretty font-mono text-sm text-muted-foreground print:-mt-1 print:text-[12px]">
             {RESUME_DATA.summary}
           </p>
         </Section>
