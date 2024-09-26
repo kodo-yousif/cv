@@ -108,15 +108,6 @@ export const RESUME_DATA = {
         "Building AI Solutions upon ASR models and helping in ASR researches non-profitably.",
     },
     {
-      company: "Techeye",
-      link: "http://techeye.org/",
-      badges: [],
-      title: "Internship",
-      start: "2023",
-      end: "2023",
-      description: "Full stack Internship to implement websites and systems.",
-    },
-    {
       company: "Shift Software",
       link: "https://shift.software/",
       badges: ["Remote"],
@@ -125,6 +116,15 @@ export const RESUME_DATA = {
       end: "2022",
       description:
         "Full stack Engineer, ensuring high quality products and flexible design solutions.",
+    },
+    {
+      company: "Techeye",
+      link: "http://techeye.org/",
+      badges: [],
+      title: "Internship",
+      start: "2021",
+      end: "2021",
+      description: "Full stack Internship to implement websites and systems.",
     },
   ],
   skills: [
